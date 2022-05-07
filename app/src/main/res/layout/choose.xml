@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Choose">
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/robotomono"
+        android:text="@string/text"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/grey2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <FrameLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/art"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/art"
+                android:text=""
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.085"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/music"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="56dp"
+                android:background="@drawable/music"
+                android:text=""
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/art"
+                app:layout_constraintStart_toEndOf="@+id/art"
+                app:layout_constraintTop_toTopOf="@+id/art"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/beach"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/beach"
+                android:text=""
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="@+id/artTxt"
+                app:layout_constraintStart_toStartOf="@+id/artTxt"
+                app:layout_constraintTop_toBottomOf="@+id/artTxt"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/romance"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/romance"
+                android:text=""
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="@+id/musicTxt"
+                app:layout_constraintStart_toStartOf="@+id/musicTxt"
+                app:layout_constraintTop_toBottomOf="@+id/musicTxt"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/horror"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/horror"
+                android:text=""
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="@+id/beachTxt"
+                app:layout_constraintStart_toStartOf="@+id/beachTxt"
+                app:layout_constraintTop_toBottomOf="@+id/beachTxt"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/sports"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/sports"
+                android:text=""
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="@+id/romTxt"
+                app:layout_constraintStart_toStartOf="@+id/romTxt"
+                app:layout_constraintTop_toBottomOf="@+id/romTxt"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/artTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/robotomono"
+                android:text="@string/art"
+                android:textColor="@color/lightBlue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/art"
+                app:layout_constraintStart_toStartOf="@+id/art"
+                app:layout_constraintTop_toBottomOf="@+id/art"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/musicTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/robotomono"
+                android:text="@string/music"
+                android:textColor="@color/lightBlue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/music"
+                app:layout_constraintStart_toStartOf="@+id/music"
+                app:layout_constraintTop_toBottomOf="@+id/music"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/beachTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/robotomono"
+                android:text="@string/beach"
+                android:textColor="@color/lightBlue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/beach"
+                app:layout_constraintStart_toStartOf="@+id/beach"
+                app:layout_constraintTop_toBottomOf="@+id/beach"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/romTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/robotomono"
+                android:text="@string/romance"
+                android:textColor="@color/lightBlue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/romance"
+                app:layout_constraintStart_toStartOf="@+id/romance"
+                app:layout_constraintTop_toBottomOf="@+id/romance"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/horrorTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/robotomono"
+                android:text="@string/horror"
+                android:textColor="@color/lightBlue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/horror"
+                app:layout_constraintStart_toStartOf="@+id/horror"
+                app:layout_constraintTop_toBottomOf="@+id/horror"
+                app:layout_constraintVertical_bias="0.102"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/sportsTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/robotomono"
+                android:text="@string/sports"
+                android:textColor="@color/lightBlue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/sports"
+                app:layout_constraintStart_toStartOf="@+id/sports"
+                app:layout_constraintTop_toBottomOf="@+id/sports"
+                app:layout_constraintVertical_bias="0.108"
+                tools:ignore="TextContrastCheck" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

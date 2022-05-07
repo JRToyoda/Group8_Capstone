@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Group8_Capstone</string>
+    <string name="art">art</string>
+    <string name="beach">beach</string>
+    <string name="horror">horror</string>
+    <string name="music">music</string>
+    <string name="romance">romance</string>
+    <string name="sports">sports</string>
+    <string name="text">What are you interested in?</string>
+    <string name="name">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Log In</string>
+    <string name="signup">Sign Up</string>
+    <string name="noAcct">Don\'t have an account?</string>
+    <string name="eventrack">eventrack</string>
+    <string name="samseng">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</string>
+    <string name="createAcc">Already have an account?</string>
+    <string name="event">Event</string>
+    <string name="number">12.2k</string>
+    <string name="calendar">Calendar</string>
+    <string name="settings">Settings</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Log Out</string>
+    <string name="changepfp">change profile picture</string>
+    <string name="name2">Name</string>
+    <string name="email2">email@gmail.com</string>
+    <string name="password2">********</string>
+    <string name="change">change</string>
+    <string name="types">event type</string>
+    <string name="themes">themes</string>
+</resources>
