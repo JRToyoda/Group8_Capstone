@@ -19,7 +19,7 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/back"
+            android:id="@+id/backTop"
             android:layout_width="50dp"
             android:layout_height="40dp"
             android:background="@drawable/back"

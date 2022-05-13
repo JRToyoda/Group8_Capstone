@@ -9,13 +9,16 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.content.pm.ActivityInfo;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
+
 import com.example.group8_capstone.databinding.BotNavBinding;
 
 import java.util.Objects;
 
-public class BotNav extends AppCompatActivity {
+public class BotNav extends AppCompatActivity implements View.OnClickListener {
 
     BotNavBinding binding;
 
@@ -46,10 +49,16 @@ public class BotNav extends AppCompatActivity {
         });
     }
 
+
     private void loadFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.fragmentFrameLayout,fragment);
         fragmentTransaction.commit();
+    }
+
+    @Override
+    public void onClick(View view) {
+
     }
 }

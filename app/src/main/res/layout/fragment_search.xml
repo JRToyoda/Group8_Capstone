@@ -472,7 +472,7 @@
                 </FrameLayout>
 
                 <Button
-                    android:id="@+id/button6"
+                    android:id="@+id/custom"
                     android:layout_width="350dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="16dp"
@@ -488,7 +488,7 @@
                     tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
                 <Button
-                    android:id="@+id/button7"
+                    android:id="@+id/search2"
                     android:layout_width="350dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="40dp"
@@ -499,10 +499,10 @@
                     android:textSize="18sp"
                     app:backgroundTint="@null"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@+id/button6"
+                    app:layout_constraintEnd_toEndOf="@+id/custom"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/button6"
-                    app:layout_constraintTop_toBottomOf="@+id/button6"
+                    app:layout_constraintStart_toStartOf="@+id/custom"
+                    app:layout_constraintTop_toBottomOf="@+id/custom"
                     app:layout_constraintVertical_bias="1.0"
                     tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 

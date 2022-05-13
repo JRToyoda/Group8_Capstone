@@ -1,6 +1,7 @@
 package com.example.group8_capstone;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +12,8 @@ import androidx.fragment.app.FragmentTransaction;
 import android.content.pm.ActivityInfo;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
+
 import com.example.group8_capstone.databinding.TpNavBinding;
 
 import java.util.Objects;
@@ -18,6 +21,7 @@ import java.util.Objects;
 public class TopNav extends AppCompatActivity {
 
     TpNavBinding binding;
+    Button back;
 
     @SuppressLint({"NonConstantResourceId", "SourceLockedOrientationActivity"})
     @Override
@@ -29,6 +33,13 @@ public class TopNav extends AppCompatActivity {
         setContentView(binding.getRoot());
         loadFragment(new HomeFragment2());
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        back = findViewById(R.id.backTop);
+
+        back.setOnClickListener(v -> {
+            Intent intent = new Intent(TopNav.this, BotNav.class);
+            startActivity(intent);
+        });
 
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
             switch (item.getItemId()){

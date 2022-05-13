@@ -2,8 +2,6 @@ package com.example.group8_capstone;
 
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -16,8 +14,8 @@ import android.widget.Button;
  * Use the {@link SearchFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class SearchFragment extends Fragment {
-    Button tag, tag2, tag3, tag4, tag5, tag6, tag7, tag8, tag9, tag10, tag11, tag12, tag13, tag14, custom, advSearch;
+public class SearchFragment extends Fragment implements View.OnClickListener {
+    Button custom, search;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -63,44 +61,16 @@ public class SearchFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_search, container, false);
+        View view = inflater.inflate(R.layout.fragment_search, container, false);
+
+        custom = view.findViewById(R.id.custom);
+        search = view.findViewById(R.id.search2);
+
+        return view;
     }
 
     @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        tag = view.findViewById(R.id.tag);
-        tag2 = view.findViewById(R.id.tag2);
-        tag3 = view.findViewById(R.id.tag3);
-        tag4 = view.findViewById(R.id.tag4);
-        tag5 = view.findViewById(R.id.tag5);
-        tag6 = view.findViewById(R.id.tag6);
-        tag7 = view.findViewById(R.id.tag7);
-        tag8 = view.findViewById(R.id.tag8);
-        tag9 = view.findViewById(R.id.tag9);
-        tag10 = view.findViewById(R.id.tag10);
-        tag11 = view.findViewById(R.id.tag11);
-        tag12 = view.findViewById(R.id.tag12);
-        tag13 = view.findViewById(R.id.tag13);
-        tag14 = view.findViewById(R.id.tag14);
+    public void onClick(View view) {
 
-
-
-        tag = set;
-        tag2 = ;
-        tag3 = ;
-        tag4 = ;
-        tag5 = ;
-        tag6 = ;
-        tag7 = ;
-        tag8 = ;
-        tag9 = ;
-        tag10 = ;
-        tag11 = ;
-        tag12 = ;
-        tag13 = ;
-        tag14 = ;
     }
-
-
 }

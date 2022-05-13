@@ -147,7 +147,7 @@
         tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/back"
+        android:id="@+id/backProfile"
         android:layout_width="50dp"
         android:layout_height="40dp"
         android:background="@drawable/back"
