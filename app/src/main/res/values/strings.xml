@@ -29,4 +29,29 @@
     <string name="change">change</string>
     <string name="types">event type</string>
     <string name="themes">themes</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="notification">Notification</string>
+    <string name="tag">Custom Tags</string>
+    <string name="advSearch">advanced search</string>
+    <string name="am">am</string>
+    <string name="pm">pm</string>
+    <string name="date">mm/dd/yyyy</string>
+    <string name="to">to</string>
+    <string name="notif_text">No Notifications</string>
+    <string name="person">Person</string>
+    <string name="gallery">Gallery</string>
+    <string name="reviews">Reviews</string>
+    <string name="eventType">art | convention</string>
+    <string name="follow">follow</string>
+    <string name="eventDate">May 26 – 27, 2022 | 10:00am - 6:00pm</string>
+    <string name="hashtags">#customTag #happy #cosplay #cartoons #art</string>
+    <string name="eventOrganizer">Event organizer</string>
+    <string name="guest">Guest</string>
+    <string name="review">(2 reviews)</string>
+    <string name="upcoming">upcoming events</string>
+    <string name="following">following</string>
+    <string name="month">month</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:id="@+id/searchBarLayout"
+                    android:layout_width="370dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="32dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.487"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <EditText
+                        android:id="@+id/searchBar"
+                        android:layout_width="370dp"
+                        android:layout_height="30dp"
+                        android:autofillHints=""
+                        android:background="@color/lightBlue"
+                        android:fontFamily="@font/robotomono"
+                        android:hint="@string/search"
+                        android:inputType="text"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        tools:ignore="TextContrastCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck"
+                        tools:layout_editor_absoluteX="20dp"
+                        tools:layout_editor_absoluteY="56dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:contentDescription="@string/samseng"
+                        android:paddingEnd="10dp"
+                        android:src="@drawable/search"
+                        tools:ignore="ImageContrastCheck" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/robotomono"
+                    android:gravity="center"
+                    android:text="@string/advSearch"
+                    android:textColor="@color/lightBlue"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/searchBarLayout"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/searchBarLayout"
+                    app:layout_constraintTop_toBottomOf="@+id/searchBarLayout"
+                    tools:ignore="TextContrastCheck" />
+
+
+                <FrameLayout
+                    android:id="@+id/timeDate"
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@+id/textView"
+                    app:layout_constraintStart_toStartOf="@+id/textView"
+                    app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/am"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="44dp"
+                            android:layout_marginTop="8dp"
+                            android:autofillHints=""
+                            android:background="@color/grey"
+                            android:fontFamily="@font/robotomono"
+                            android:gravity="center"
+                            android:hint="@string/am"
+                            android:inputType="time"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+                        <TextView
+                            android:id="@+id/to1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="36dp"
+                            android:fontFamily="@font/robotomono"
+                            android:text="@string/to"
+                            app:layout_constraintBottom_toBottomOf="@+id/am"
+                            app:layout_constraintStart_toEndOf="@+id/am"
+                            app:layout_constraintTop_toTopOf="@+id/am"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <EditText
+                            android:id="@+id/pm"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="36dp"
+                            android:autofillHints=""
+                            android:background="@color/grey"
+                            android:fontFamily="@font/robotomono"
+                            android:gravity="center"
+                            android:hint="@string/pm"
+                            android:inputType="time"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white"
+                            app:layout_constraintBottom_toBottomOf="@+id/to1"
+                            app:layout_constraintStart_toEndOf="@+id/to1"
+                            app:layout_constraintTop_toTopOf="@+id/to1"
+                            app:layout_constraintVertical_bias="1.0"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+                        <EditText
+                            android:id="@+id/date1"
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="30dp"
+                            android:autofillHints=""
+                            android:background="@color/grey"
+                            android:fontFamily="@font/robotomono"
+                            android:gravity="center"
+                            android:hint="@string/date"
+                            android:inputType="date"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white"
+                            app:layout_constraintEnd_toEndOf="@+id/am"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="@+id/am"
+                            app:layout_constraintTop_toBottomOf="@+id/am"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+                        <TextView
+                            android:id="@+id/to2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="36dp"
+                            android:fontFamily="@font/robotomono"
+                            android:text="@string/to"
+                            app:layout_constraintBottom_toBottomOf="@+id/date1"
+                            app:layout_constraintStart_toEndOf="@+id/date1"
+                            app:layout_constraintTop_toTopOf="@+id/date1"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <EditText
+                            android:id="@+id/date2"
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="36dp"
+                            android:autofillHints=""
+                            android:background="@color/grey"
+                            android:fontFamily="@font/robotomono"
+                            android:gravity="center"
+                            android:hint="@string/date"
+                            android:inputType="date"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white"
+                            app:layout_constraintBottom_toBottomOf="@+id/to2"
+                            app:layout_constraintStart_toEndOf="@+id/to2"
+                            app:layout_constraintTop_toTopOf="@+id/to2"
+                            app:layout_constraintVertical_bias="1.0"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/typeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/robotomono"
+                    android:text="@string/types"
+                    android:textColor="@color/lightBlue"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/timeDate"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/timeDate"
+                    app:layout_constraintTop_toBottomOf="@+id/timeDate"
+                    tools:ignore="TextContrastCheck" />
+
+                <FrameLayout
+                    android:id="@+id/tagLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toEndOf="@+id/typeTxt"
+                    app:layout_constraintHorizontal_bias="0.096"
+                    app:layout_constraintStart_toStartOf="@+id/typeTxt"
+                    app:layout_constraintTop_toBottomOf="@+id/typeTxt">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/tag"
+                            android:layout_width="120dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/tag_bg"
+                            android:text=""
+                            app:backgroundTint="@null"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.054"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <Button
+                            android:id="@+id/tag2"
+                            android:layout_width="120dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/tag_bg"
+                            android:text=""
+                            app:backgroundTint="@null"
+                            app:layout_constraintBottom_toBottomOf="@+id/tag"
+                            app:layout_constraintStart_toEndOf="@+id/tag"
+                            app:layout_constraintTop_toTopOf="@+id/tag"
+                            app:layout_constraintVertical_bias="0.0"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <Button
+                            android:id="@+id/tag3"
+                            android:layout_width="120dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/tag_bg"
+                            android:text=""
+                            app:backgroundTint="@null"
+                            app:layout_constraintBottom_toBottomOf="@+id/tag2"
+                            app:layout_constraintStart_toEndOf="@+id/tag2"
+                            app:layout_constraintTop_toTopOf="@+id/tag2"
+                            app:layout_constraintVertical_bias="0.0"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <Button
+                            android:id="@+id/tag4"
+                            android:layout_width="120dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/tag_bg"
+                            android:text=""
+                            app:backgroundTint="@null"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/tag"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="@+id/tag"
+                            app:layout_constraintTop_toBottomOf="@+id/tag"
+                            app:layout_constraintVertical_bias="0.034"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <Button
+                            android:id="@+id/tag5"
+                            android:layout_width="120dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/tag_bg"
+                            android:text=""
+                            app:backgroundTint="@null"
+                            app:layout_constraintBottom_toBottomOf="@+id/tag4"
+                            app:layout_constraintStart_toEndOf="@+id/tag4"
+                            app:layout_constraintTop_toTopOf="@+id/tag4"
+                            app:layout_constraintVertical_bias="0.0"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <Button
+                            android:id="@+id/tag6"
+                            android:layout_width="120dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/tag_bg"
+                            android:text=""
+                            app:backgroundTint="@null"
+                            app:layout_constraintBottom_toBottomOf="@+id/tag5"
+                            app:layout_constraintStart_toEndOf="@+id/tag5"
+                            app:layout_constraintTop_toTopOf="@+id/tag5"
+                            app:layout_constraintVertical_bias="0.0"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <Button
+                            android:id="@+id/tag7"
+                            android:layout_width="120dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/tag_bg"
+                            android:text=""
+                            app:backgroundTint="@null"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.254"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.893"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <Button
+                            android:id="@+id/tag8"
+                            android:layout_width="120dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/tag_bg"
+                            android:text=""
+                            app:backgroundTint="@null"
+                            app:layout_constraintBottom_toBottomOf="@+id/tag7"
+                            app:layout_constraintStart_toEndOf="@+id/tag7"
+                            app:layout_constraintTop_toTopOf="@+id/tag7"
+                            app:layout_constraintVertical_bias="0.0"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/themesTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/robotomono"
+                    android:text="@string/themes"
+                    android:textColor="@color/lightBlue"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/tagLayout1"
+                    app:layout_constraintHorizontal_bias="0.047"
+                    app:layout_constraintStart_toStartOf="@+id/tagLayout1"
+                    app:layout_constraintTop_toBottomOf="@+id/tagLayout1"
+                    tools:ignore="TextContrastCheck" />
+
+                <FrameLayout
+                    android:id="@+id/tagLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toEndOf="@+id/themesTxt"
+                    app:layout_constraintHorizontal_bias="0.047"
+                    app:layout_constraintStart_toStartOf="@+id/themesTxt"
+                    app:layout_constraintTop_toBottomOf="@+id/themesTxt">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/tag9"
+                            android:layout_width="120dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/tag_bg"
+                            android:text=""
+                            app:backgroundTint="@null"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.054"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <Button
+                            android:id="@+id/tag10"
+                            android:layout_width="120dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/tag_bg"
+                            android:text=""
+                            app:backgroundTint="@null"
+                            app:layout_constraintBottom_toBottomOf="@+id/tag9"
+                            app:layout_constraintStart_toEndOf="@+id/tag9"
+                            app:layout_constraintTop_toTopOf="@+id/tag9"
+                            app:layout_constraintVertical_bias="0.0"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <Button
+                            android:id="@+id/tag11"
+                            android:layout_width="120dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/tag_bg"
+                            android:text=""
+                            app:backgroundTint="@null"
+                            app:layout_constraintBottom_toBottomOf="@+id/tag10"
+                            app:layout_constraintStart_toEndOf="@+id/tag10"
+                            app:layout_constraintTop_toTopOf="@+id/tag10"
+                            app:layout_constraintVertical_bias="1.0"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <Button
+                            android:id="@+id/tag12"
+                            android:layout_width="120dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/tag_bg"
+                            android:text=""
+                            app:backgroundTint="@null"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/tag9"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="@+id/tag9"
+                            app:layout_constraintTop_toBottomOf="@+id/tag9"
+                            app:layout_constraintVertical_bias="0.034"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <Button
+                            android:id="@+id/tag13"
+                            android:layout_width="120dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/tag_bg"
+                            android:text=""
+                            app:backgroundTint="@null"
+                            app:layout_constraintBottom_toBottomOf="@+id/tag12"
+                            app:layout_constraintStart_toEndOf="@+id/tag12"
+                            app:layout_constraintTop_toTopOf="@+id/tag12"
+                            app:layout_constraintVertical_bias="1.0"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <Button
+                            android:id="@+id/tag14"
+                            android:layout_width="120dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/tag_bg"
+                            android:text=""
+                            app:backgroundTint="@null"
+                            app:layout_constraintBottom_toBottomOf="@+id/tag13"
+                            app:layout_constraintStart_toEndOf="@+id/tag13"
+                            app:layout_constraintTop_toTopOf="@+id/tag13"
+                            app:layout_constraintVertical_bias="0.0"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </FrameLayout>
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/grey"
+                    android:text="@string/tag"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    app:backgroundTint="@null"
+                    app:layout_constraintEnd_toEndOf="@+id/tagLayout2"
+                    app:layout_constraintHorizontal_bias="0.508"
+                    app:layout_constraintStart_toStartOf="@+id/tagLayout2"
+                    app:layout_constraintTop_toBottomOf="@+id/tagLayout2"
+                    tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round"
+                    android:text="@string/search"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    app:backgroundTint="@null"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/button6"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/button6"
+                    app:layout_constraintTop_toBottomOf="@+id/button6"
+                    app:layout_constraintVertical_bias="1.0"
+                    tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

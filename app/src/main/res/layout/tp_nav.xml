@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back"
+            android:text=""
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/topLayout"
+        tools:layout_editor_absoluteX="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="177dp"
+                android:contentDescription="@string/samseng"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/header"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="84dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/robotomono"
+                android:text="@string/event"
+                android:textColor="@color/blue"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/header"
+                app:layout_constraintHorizontal_bias="0.085"
+                app:layout_constraintStart_toStartOf="@+id/header"
+                app:layout_constraintTop_toBottomOf="@+id/header"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/robotomono"
+                android:text="@string/eventType"
+                android:textColor="@color/grey2"
+                android:textSize="15sp"
+                android:textStyle=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/textView10"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/textView10"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/follow"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginStart="88dp"
+                android:background="@drawable/round"
+                android:fontFamily="@font/robotomono"
+                android:text="@string/follow"
+                android:textAllCaps="false"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/textView10"
+                app:layout_constraintStart_toEndOf="@+id/textView10"
+                app:layout_constraintTop_toTopOf="@+id/textView10"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginStart="10dp"
+            app:srcCompat="@drawable/pfpblue"
+            android:contentDescription="@string/samseng" />
+
+
+
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/lightBlue"
+        app:backgroundTint="@null"
+        app:itemIconTint="@color/icons_color"
+        app:itemRippleColor="@color/white"
+        app:itemTextColor="@color/icons_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile"
+        app:menu="@menu/top_nav" />
+
+    <FrameLayout
+        android:id="@+id/fragmentFrameLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottomNavigationView">
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
