@@ -34,7 +34,7 @@ public class SignUp extends AppCompatActivity {
         login = findViewById(R.id.login2);
 
         signUp.setOnClickListener(v -> {
-            Intent intent = new Intent(SignUp.this,BotNav.class);
+            Intent intent = new Intent(SignUp.this,Choose.class);
             if(username.getText().toString().equals("") || email.getText().toString().equals("") || password.getText().toString().equals("")) {
                 Toast.makeText(SignUp.this,"LACKING INFORMATION",Toast.LENGTH_LONG).show();
             } else {

@@ -9,6 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Group8_Capstone">
+        <activity android:name=".Choose"
+            android:exported="false"/>
+        <activity android:name=".Settings"
+            android:exported="false"/>
+        <activity android:name=".Calendar"
+            android:exported="false"/>
+        <activity android:name=".Custom"
+            android:exported="false"/>
+        <activity android:name=".Find"
+            android:exported="false"/>
         <activity android:name=".Profile"
             android:exported="false"/>
         <activity android:name=".SignUp"

@@ -52,6 +52,8 @@
     <string name="upcoming">upcoming events</string>
     <string name="following">following</string>
     <string name="month">month</string>
+    <string name="find">Oops! Looks like we couldn\'t find what you\'re looking for</string>
+    <string name="custom">This feature is unavailable in your country</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

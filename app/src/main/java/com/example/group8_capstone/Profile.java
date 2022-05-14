@@ -13,7 +13,7 @@ import android.widget.Button;
 import java.util.Objects;
 
 public class Profile extends AppCompatActivity {
-    Button back, logout;
+    Button back, logout, calendar, settings;
 
     @SuppressLint("SourceLockedOrientationActivity")
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,14 +25,23 @@ public class Profile extends AppCompatActivity {
 
         logout = findViewById(R.id.logout);
         back = findViewById(R.id.backProfile);
+        calendar = findViewById(R.id.calendar);
+        settings = findViewById(R.id.settings);
 
         logout.setOnClickListener(v -> {
             Intent intent = new Intent(Profile.this, Login.class);
             startActivity(intent);
         });
 
-        back.setOnClickListener(v -> {
-            Intent intent = new Intent(Profile.this, BotNav.class);
+        back.setOnClickListener(v -> finish());
+
+        calendar.setOnClickListener(v -> {
+            Intent intent = new Intent(Profile.this, Calendar.class);
+            startActivity(intent);
+        });
+
+        settings.setOnClickListener(v -> {
+            Intent intent = new Intent(Profile.this, Settings.class);
             startActivity(intent);
         });
     }

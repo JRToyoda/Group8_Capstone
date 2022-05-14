@@ -8,19 +8,22 @@
         <entry key="..\:/Users/Jaen/AndroidStudioProjects/Group8_Capstone/app/src/main/res/drawable/gradient_background.xml" value="0.303" />
         <entry key="..\:/Users/Jaen/AndroidStudioProjects/Group8_Capstone/app/src/main/res/drawable/home_selector.xml" value="0.303" />
         <entry key="..\:/Users/Jaen/AndroidStudioProjects/Group8_Capstone/app/src/main/res/drawable/round.xml" value="0.303" />
+        <entry key="..\:/Users/Jaen/AndroidStudioProjects/Group8_Capstone/app/src/main/res/drawable/round2.xml" value="0.1995" />
         <entry key="..\:/Users/Jaen/AndroidStudioProjects/Group8_Capstone/app/src/main/res/drawable/tag_bg.xml" value="0.1" />
         <entry key="..\:/Users/Jaen/AndroidStudioProjects/Group8_Capstone/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Jaen/AndroidStudioProjects/Group8_Capstone/app/src/main/res/layout/bot_nav.xml" value="0.18" />
         <entry key="..\:/Users/Jaen/AndroidStudioProjects/Group8_Capstone/app/src/main/res/layout/calendar.xml" value="0.33" />
-        <entry key="..\:/Users/Jaen/AndroidStudioProjects/Group8_Capstone/app/src/main/res/layout/choose.xml" value="0.22" />
+        <entry key="..\:/Users/Jaen/AndroidStudioProjects/Group8_Capstone/app/src/main/res/layout/choose.xml" value="0.25" />
+        <entry key="..\:/Users/Jaen/AndroidStudioProjects/Group8_Capstone/app/src/main/res/layout/custom.xml" value="0.19166666666666668" />
         <entry key="..\:/Users/Jaen/AndroidStudioProjects/Group8_Capstone/app/src/main/res/layout/feed.xml" value="0.25" />
+        <entry key="..\:/Users/Jaen/AndroidStudioProjects/Group8_Capstone/app/src/main/res/layout/find.xml" value="0.19166666666666668" />
         <entry key="..\:/Users/Jaen/AndroidStudioProjects/Group8_Capstone/app/src/main/res/layout/fragment_gallery.xml" value="0.17760416666666667" />
         <entry key="..\:/Users/Jaen/AndroidStudioProjects/Group8_Capstone/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/Users/Jaen/AndroidStudioProjects/Group8_Capstone/app/src/main/res/layout/fragment_home2.xml" value="0.33" />
         <entry key="..\:/Users/Jaen/AndroidStudioProjects/Group8_Capstone/app/src/main/res/layout/fragment_notif.xml" value="0.2" />
         <entry key="..\:/Users/Jaen/AndroidStudioProjects/Group8_Capstone/app/src/main/res/layout/fragment_person.xml" value="0.25" />
         <entry key="..\:/Users/Jaen/AndroidStudioProjects/Group8_Capstone/app/src/main/res/layout/fragment_reviews.xml" value="0.25" />
-        <entry key="..\:/Users/Jaen/AndroidStudioProjects/Group8_Capstone/app/src/main/res/layout/fragment_search.xml" value="0.18" />
+        <entry key="..\:/Users/Jaen/AndroidStudioProjects/Group8_Capstone/app/src/main/res/layout/fragment_search.xml" value="0.1" />
         <entry key="..\:/Users/Jaen/AndroidStudioProjects/Group8_Capstone/app/src/main/res/layout/header.xml" value="0.22" />
         <entry key="..\:/Users/Jaen/AndroidStudioProjects/Group8_Capstone/app/src/main/res/layout/login.xml" value="0.25" />
         <entry key="..\:/Users/Jaen/AndroidStudioProjects/Group8_Capstone/app/src/main/res/layout/profile.xml" value="0.2" />

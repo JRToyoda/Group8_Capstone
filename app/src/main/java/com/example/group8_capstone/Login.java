@@ -2,6 +2,7 @@ package com.example.group8_capstone;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -34,12 +35,18 @@ public class Login extends AppCompatActivity {
         login = findViewById(R.id.login);
         signUp = findViewById(R.id.signup);
 
+
+
         login.setOnClickListener(v -> {
             Intent intent = new Intent(Login.this,BotNav.class);
             if(email.getText().toString().equals("") || password.getText().toString().equals("")) {
                 Toast.makeText(Login.this,"LACKING INFORMATION",Toast.LENGTH_LONG).show();
             } else {
                 startActivity(intent);
+                SharedPreferences preferences = getSharedPreferences("login", MODE_PRIVATE);
+                SharedPreferences.Editor editor = preferences.edit();
+                editor.putString("save", "true");
+                editor.apply();
             }
         });
 

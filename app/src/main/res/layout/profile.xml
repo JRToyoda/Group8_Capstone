@@ -62,10 +62,12 @@
                 app:srcCompat="@drawable/calendar"
                 android:contentDescription="@string/samseng" />
 
-            <TextView
+            <Button
                 android:id="@+id/calendar"
+                style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textAllCaps="false"
                 android:fontFamily="@font/robotomono"
                 android:text="@string/calendar"
                 android:textColor="@color/white"
@@ -109,10 +111,12 @@
                 app:srcCompat="@drawable/settings"
                 android:contentDescription="@string/samseng" />
 
-            <TextView
+            <Button
                 android:id="@+id/settings"
+                style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textAllCaps="false"
                 android:fontFamily="@font/robotomono"
                 android:text="@string/settings"
                 android:textColor="@color/white"

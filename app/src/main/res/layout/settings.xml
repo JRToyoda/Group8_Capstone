@@ -20,7 +20,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/back"
+                android:id="@+id/backSet"
                 android:layout_width="50dp"
                 android:layout_height="40dp"
                 android:background="@drawable/back"
@@ -57,7 +57,7 @@
         android:id="@+id/imageView4"
         android:layout_width="350dp"
         android:layout_height="350dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
@@ -86,7 +86,7 @@
         android:id="@+id/textView"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="468dp"
         android:fontFamily="@font/robotomono"
         android:text="@string/name2"
         android:textColor="@color/grey2"
@@ -169,7 +169,7 @@
         app:layout_constraintVertical_bias="0.064" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/changeName"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -184,7 +184,7 @@
         app:layout_constraintVertical_bias="0.476" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/changeEmail"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -198,7 +198,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView4" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/changePassword"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:state_enabled="true" android:drawable="@drawable/greytag" />
+    <item android:state_pressed="true" android:drawable="@drawable/bluetag" />
 
-    <item android:state_selected="true" android:drawable="@drawable/greytag" />
+    <item android:state_selected="true" android:drawable="@drawable/bluetag" />
 
-    <item android:drawable="@drawable/bluetag" />
+    <item android:drawable="@drawable/greytag" />
 
 
 </selector>
