@@ -64,6 +64,9 @@ public class SearchFragment extends Fragment{
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_search, container, false);
 
+        custom = view.findViewById(R.id.custom);
+        search = view.findViewById(R.id.search2);
+
         custom.setOnClickListener(v -> {
             Intent intent = new Intent(requireActivity().getApplicationContext(), Custom.class);
             startActivity(intent);
