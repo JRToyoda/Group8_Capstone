@@ -16,7 +16,7 @@ import android.widget.Button;
  * create an instance of this fragment.
  */
 public class SearchFragment extends Fragment{
-    Button customs, search;
+    Button custom, search;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -64,10 +64,10 @@ public class SearchFragment extends Fragment{
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_search, container, false);
 
-        customs = view.findViewById(R.id.custom);
+        custom = view.findViewById(R.id.custom);
         search = view.findViewById(R.id.search2);
 
-        customs.setOnClickListener(v -> {
+        custom.setOnClickListener(v -> {
             Intent intent = new Intent(requireActivity().getApplicationContext(), Custom.class);
             startActivity(intent);
         });
